@@ -1,92 +1,267 @@
-# About Python
+# பைத்தான் மொழி
 
-Python is one of those rare languages which can claim to be both _simple_ and _powerful_. You will find yourself pleasantly surprised to see how easy it is to concentrate on the solution to the problem rather than the syntax and structure of the language you are programming in.
 
-The official introduction to Python is:
+பைத்தான் ஒரு நிரலாக்க மொழி. இது மிகவும் எளிது. அதே நேரத்தில் திறம்
+மிக்கது. Syntax எனப்படும் நிரல் எழுதும் அமைப்பின் சிக்கல்கள் பெரிதாக இல்லாமல்,
+நினைத்ததை ஆங்கிலத்தில் தெளிவாக எழுதினாலே, அது பைத்தான் நிரல்தான் என்று கூறும்
+அளவிற்கு இது மிகவும் எளிதாக இருக்கும். அல்கோரிதம் கூட வேண்டாம். புளோ சார்ட்
+(Flow Chart) வரையத் தெரிந்தாலே, அதை ஆங்கிலத்தில் எழுதினால் அது ஏறக்குறைய
+பைத்தான் நிரல்தான்.
 
-> Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+பைத்தான் தளத்தில் இருக்கும் அறிமுகம்-
 
-I will discuss most of these features in more detail in the next section.
+>பைத்தான், எளிதில் எவரும் கற்கக் கூடிய, திறம் மிக்க நிரலாக்க மொழி. இதில் பலவகை
+>மேம்பட்ட Data Structure (தரவு வகை) உள்ளன.  எளிய, ஆற்றல் மிக்க Object
+>Oriented Programming (பொருள் சார் நிரலாக்கம்) திறன் கூட உண்டு. இதன்
+>Syntax(நிரல் கட்டமைப்பு) மிக எளிது. Interpreted முறையில்
+>இயங்குகிறது. அனைத்து இயங்கு தளங்களிலும் (Operating System) செயல்படக்
+>கூடியது. எளிதில் மனதில் நினைக்கும் திட்டங்களை, நிரலாக எழுத உதவுகிறது.
 
-## Story behind the name
+அட. இப்போது தானே சொன்னீர்கள், பைத்தான் மிக எளிது என்று. அதற்குள் பல புரியாத கடமுட
+கணினி வார்த்தைகளை சொல்கிறீர்களே.
 
-Guido van Rossum, the creator of the Python language, named the language after the BBC show "Monty
-Python's Flying Circus". He doesn't particularly like snakes that kill animals for food by winding
-their long bodies around them and crushing them.
+பயம் வேண்டாம். மேலே உள்ளவை, பைத்தான் பற்றி ஒரு பருந்துப் பார்வை அறிமுகம்
+மட்டுமே. அதில் உள்ளவை எதுவுமே புரியவில்லை என்றாலும் பரவாயில்லை. விரைவில் கற்கப்
+போகிறோம்.
 
-## Features of Python
+## அதென்ன பெயர்? பைத்தான் ?
 
-### Simple
+![Guido van Rossum](./img/guido-headshot-2019.jpg ) படம் எடுத்தவர்:
+ Michael Cavotta. உரிமை: CC BY-NC-ND 4.0 கைடோ வான் ரோசம்(Guido van
+ Rossum), (ரொம்ப ரோசம் கொண்டவர் போல) இவர்தான் பைத்தான் மொழியை உருவாக்கியவர். அவர்
+ BBC தொலைக்காட்சியில் ஒளிபரப்பாகி வந்த "Monty Python's Flying Circus" என்ற
+ தொடரை விரும்பிப் பார்ப்பார். அதன் பெயரால் ஈர்க்கப்பட்டு, தான் உருவாக்கிய மொழிக்கு
+ 'பைத்தான்' என்று பெயர் சூட்டினார். மற்றபடி அவருக்கு பாம்புகளின் மேல் பிரியம் ஏதும்
+ இல்லை. ஆம். பைத்தான் என்றால் மலைப்பாம்பு என்று பொருள். போகட்டும். நல்லவேளை. அவர்
+ நமது நெடுந்தொடர்களைப் பார்க்கவில்லை. ஒரு வேளை அவருக்கு தமிழ் தெரிந்து, நமது
+ தொலைக்காட்சிச் தொடர்களைப் பார்த்திருந்தால், 'சித்தி', 'மெட்டி ஒலி' என்று நாம்
+ படித்துக் கொண்டிருப்போம்.
 
-Python is a simple and minimalistic language. Reading a good Python program feels almost like reading English, although very strict English! This pseudo-code nature of Python is one of its greatest strengths. It allows you to concentrate on the solution to the problem rather than the language itself.
+1996 ல் அதன் தொடக்கத்தைப்பற்றி கீழ்கண்டவாறு கூறுகிறார்: 
 
-### Easy to Learn
+>ஆறு வருடங்களுக்கு முன் டிசம்பர் 1989 ல் கிருஸ்துமஸ் விடுமுறையின் போது பொழுது
+>போக்கிற்காக ஒரு நிரலாக்க மொழித்திட்டத்தை தேடிக் கொண்டிருந்தேன். என்னுடைய அலுவலகம்
+> முடியிருந்தது ஆனால் நான் வீட்டில் ஒரு கணினி வைத்திருந்தேன். ஒரு புதிய
+>ஸ்கிரிப்டிங் மொழிக்கு மொழிப்பெயர்ப்பு மென்பொருள் தயார் செய்ய முடிவு செய்தேன். ABC
+>மொழிக்கு சந்ததியான இந்த நிரலாக்க மொழி திட்டத்திற்கு பைத்தான் என
+>பெயரிட்டேன். மான்டி பைத்தான் பிளையிங் சர்க்கஸ் என்ற நாடகத்தின் ரசிகனாக இருந்த
+>காரணத்தினால் புதிய மொழிக்கு பைத்தான் எனப் பெயரிட்டேன்.
 
-As you will see, Python is extremely easy to get started with. Python has an extraordinarily simple syntax, as already mentioned.
+நன்றி - விக்கிப்பீடியா - https://ta.wikipedia.org/s/56ne
 
-### Free and Open Source
 
-Python is an example of a _FLOSS_ (Free/Libre and Open Source Software). In simple terms, you can freely distribute copies of this software, read its source code, make changes to it, and use pieces of it in new free programs. FLOSS is based on the concept of a community which shares knowledge. This is one of the reasons why Python is so good - it has been created and is constantly improved by a community who just want to see a better Python.
+## பைத்தான் மொழியின் சிறப்புகள்
 
-### High-level Language
+### மிக எளிது
 
-When you write programs in Python, you never need to bother about the low-level details such as managing the memory used by your program, etc.
 
-### Portable
+ஆம். பைத்தான் மிக, மிக எளிய மொழி. ஒரு பைத்தான் நிரலைப் படித்தால், ஆங்கிலத்தில்
+எழுதப்பட்ட ஒரு நிரலரின் எண்ண ஓட்டத்தைப் படிப்பது போலவே இருக்கும். சும்மா நீங்கள்
+எழுத நினைக்கும் நிரலை, ஆங்கிலத்தில் ஒரு வெள்ளோட்மாக எழுதினாலே போதும். அது
+ஏறக்குறைய பைத்தான் போலவே இருக்கும். இதனால், நாம் நிரல் எழுதுவதில் வரும்
+சிக்கல்களில் சிக்கி, சின்னாபின்னமாகிப் போகாமல், எளிதில் தப்பித்து விடலாம்.
 
-Due to its open-source nature, Python has been ported to (i.e. changed to make it work on) many platforms. All your Python programs can work on any of these platforms without requiring any changes at all if you are careful enough to avoid any system-dependent features.
 
-You can use Python on GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE and PocketPC!
+### கற்பது மிக எளிது
+எவரும் எளிதில் கற்கலாம். இப்போது பள்ளிகளில் C,C++,Java போன்ற மொழிகளுக்குப்
+பதிலாக, பைத்தான் மொழியையே முதல் மொழியாக கற்றுத் தரத் தொடங்கிவிட்டனர். பலருக்கும்
+பைத்தான், தாய் நிரல் மொழி ஆகி வருகிறது.
 
-You can even use a platform like [Kivy](http://kivy.org) to create games for your computer _and_ for iPhone, iPad, and Android.
 
-### Interpreted
+### கட்டற்ற மென்பொருள்
 
-This requires a bit of explanation.
+பைத்தான் ஒரு கட்டற்ற மென்பொருள்.  _FLOSS_ (Free/Libré and Open Source
+Software) 
 
-A program written in a compiled language like C or C\++ is converted from the source language i.e. C or C++ into a language that is spoken by your computer (binary code i.e. 0s and 1s) using a compiler with various flags and options. When you run the program, the linker/loader software copies the program from hard disk to memory and starts running it.
+- இலவசம். ஆம். முழுக்க இலவசம். பைத்தான் மொழியை வாங்க, யாரும் வீட்டை விற்கத் தேவை
+  இல்லை. https://www.python.org/downloads/ இத்தளத்தில் பதிவிறக்கம் செய்யலாம்.
 
-Python, on the other hand, does not need compilation to binary. You just _run_ the program directly from the source code. Internally, Python converts the source code into an intermediate form called bytecodes and then translates this into the native language of your computer and then runs it. All this, actually, makes using Python much easier since you don't have to worry about compiling the program, making sure that the proper libraries are linked and loaded, etc. This also makes your Python programs much more portable, since you can just copy your Python program onto another computer and it just works!
+- பகிரலாம். இணையத்தில் பதிவிறக்கிய பைத்தான் மொழியை, யாவரும் எங்கும்
+  பகிரலாம். தடை ஏதும் இல்லை. பைரசி சிக்கல் ஏதும் இல்லை. பகிர்ந்தால் கைது வாரண்ட்
+  ஏதும் வராது.
 
-### Object Oriented
+- மூல நிரலைக் கூட பெறலாம். பைத்தான் மொழி பெரும்பாலும் C மொழியில்
+  எழுதப்பட்டது. அதன் மூல நிரலைக் கூட பைத்தான் இணைய தளத்தில் இருந்து பதிவிறக்கம்
+  செய்து ஆராயலாம். காண்க - https://www.python.org/downloads/source/
 
-Python supports procedure-oriented programming as well as object-oriented programming (OOP). In _procedure-oriented_ languages, the program is built around procedures or functions which are nothing but reusable pieces of programs. In _object-oriented_ languages, the program is built around objects which combine data and functionality. Python has a very powerful but simplistic way of doing OOP, especially when compared to big languages like C++ or Java.
+- மாற்றங்கள் செய்யலாம். பைத்தான் உங்களுக்கு வசதிப்பட்டு வரவில்லையா? அதன் மூல
+  நிரல்தான் இருக்கிறதே. அதை பட்டி டிங்கரிங் பார்த்து உங்களுக்கு ஏற்றவாறு மாற்றிக்
+  கொள்ளலாம்.
 
-### Extensible
+- மாற்றங்களை வெளியிடலாம். பட்டி டிங்கரிங் பார்த்தாச்சா? இனி அந்த மாற்றங்களுடன்
+  உங்களுக்கு விருப்பமான பெயரில் வெளியிடலாம். என்ன, இதே உரிமைகளுடனேதான்
+  வெளியிட வேண்டும்.
 
-If you need a critical piece of code to run very fast or want to have some piece of algorithm not to be open, you can code that part of your program in C or C\++ and then use it from your Python program.
+நீங்கள் என்ன பெயர் வைப்பீர்கள்? BigBoss பிரியர் எனில் Boss என்றே கூட வைக்கலாம். அண்ணன்
+'முத்து அண்ணாமலை' அவர்கள், தமிழில் ஒரு நிரலாக்க மொழி உருவாக்கி (பைத்தான்
+போன்றதே) 'எழில் மொழி' என்று வெளியிட்டுள்ளார். அவர் 'எழில்' என்று ஒரு நெடுந்தொடர்
+பார்த்திருப்பார் போல.  :-) அவரிடமே கேட்டேன். 'அதெல்லாம் இல்லைங்க! பள்ளிக்கு
+பேருந்தில் செல்லும் காலங்களில் கண்ட ஒரு அழகிய வீட்டின் பெயர் அது. அதையே ஒரு
+அழகியல் காரணமாக வைத்தது.' என்றார்.  https://ta.wikipedia.org/s/27xm
 
-### Embeddable
 
-You can embed Python within your C/C\++ programs to give _scripting_ capabilities for your program's users.
+மேற்கண்ட உரிமைகள் அனைத்தையும் தருவதே 'கட்டற்ற மென்பொருள்' உரிமை. Free Software
+/ Open Source எனப்படுபவை. இங்கு Free என்பது இலவசம் அல்ல. 'Freedom. கட்டற்ற'
+என்ற பொருளில் வழங்கப் படுபவை.
 
-### Extensive Libraries
+மனிதர் அனைவரின் மீதும் பேரன்பு கொண்ட, நிரலாளர்கள் அனைவரும், தமது நிரல் அறிவையும்,
+அனுபவத்தையும், அனைவருக்கும் இலவசமாகப் பகிர்ந்து கொள்ளும் அதிசயமான ஒரு கட்டமைப்பே
+'கட்டற்ற மென்பொருட்கள்' உருவாக்கம் ஆகும்.  கட்டற்ற மென்பொருளாக பைத்தான் மொழியை
+வெளியிட்டதே அதன் மாபெரும் சிறப்பு அம்சம். முதல் பதிப்பு உருவான நாள் முதல், இன்று
+வரை பைத்தான் மொழி உலகெங்கும் உள்ள பங்களிப்பாளர்களால், நாளொரு மேனியும் பொழுதொரு
+வண்ணமுமாக, சிறப்பாக வளர்ந்து வருகிறது.
 
-The Python Standard Library is huge indeed. It can help you do various things involving regular expressions,documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff. Remember, all this is always available wherever Python is installed. This is called the _Batteries Included_ philosophy of Python.
 
-Besides the standard library, there are various other high-quality libraries which you can find at the [Python Package Index](http://pypi.python.org/pypi).
+### உயர் நிலை மொழி
+
+நாம் பைத்தான் மொழியில் நிரல் எழுதும் போது, எதைப் பற்றியும் கவலைப்படாமல், நினைப்பதை
+எழுதித் தள்ளலாம். கணினியில் நினைவக மேலாண்மை (Memory Management, Garbage
+Collection) போன்ற அடிப்படை விசயங்களை பைத்தான் மொழியே பார்த்துக் கொள்ளும். பல
+மொழிகளில் அவற்றை நாம் தான், கவனித்து, அடிக்கடி சரி செய்ய வேண்டும்.
+
+### Portable - எல்லா இயக்குதளங்களிலும் (Operating System) பைத்தான் இயங்கிறது
+
+பைத்தான் கட்டற்ற மொழி. ஆகையால், பல்வேறு இயக்குதளங்களை பயன்படுத்துபவர்கள், பைத்தான்
+மொழியை தாம் விரும்பும் இயக்குதளத்தில் பைத்தான் மொழியை மாற்றி, எளிதில் நிறுவும்
+வகையில் வழங்குகின்றனர். பெரும்பாலான பைத்தான் நிரல்கள் எந்த இயக்குதளத்தில் போட்டாலும்,
+ஒரே மாதிரியாகவே செயல்படுபவை.
+
+பின்வரும் இயக்குதளங்களில் பைத்தான் கிடைக்கிறது. 
+GNU/Linux, Windows, FreeBSD, Macintosh, Android,  Solaris,
+OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS,
+Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE
+and PocketPC!
+
+
+அம்மாடியோவ். இவ்வளவு இயக்குதளங்கள் இருக்கின்றனவா? அதுவே எனக்கு இப்போதுதான் தெரியும்.
+
+
+கூடுதல் வசதி. [Kivy](http://kivy.org) என்ற நிரல் தொகுப்பு மூலம், கணினி,
+ஆன்டிராய்டு, ஐபோன் கருவிகள் அனைத்திற்கும் செயலிகளை உருவாக்க இயலும்.
+
+### Interpreted (வரி வரியாக இயக்குதல்)
+
+C/C++ மொழிகளில் நிரல் எழுதி, அதை இயக்க, நிரலை Compile என்று ஒரு வேலை செய்ய
+வேண்டும். அப்படி Compile செய்த பின், நமக்கு ஒரு Binary கோப்பு ஒன்று
+கிடைக்கும். அது கணினிக்கு மட்டும் புரியும் வகையில் இருக்கும். நாம் திறத்து
+பார்த்தால் காலகேய மொழியில் எழுதியது போல இருக்கும். யாருக்கும் ஒன்றும்
+புரியாது. ஆனால் அந்த பைனரி கோப்பை வேறு கணினியில் இயக்கினால், நன்றாக
+இயங்கும். பைனரியாக மாற்றிய பிறகு, மூல நிரல் தேவைப்படாது.
+
+ஆனால், பைத்தான் அப்படி அல்ல. இங்கு, பைனரிக்கோ, காலகேய மொழிக்கோ இடம் இல்லை. எந்த
+கணினியில் நிரலை இயக்க வேண்டுமானாலும், அங்கு மூல நிரலை மொத்தமாக சேமிக்க
+வேண்டும். பிறகே நிரலை இயக்க வேண்டும். ஒவ்வொரு வரியாக நிரல் படிக்கப்பட்டு இயக்கப்
+படுகிறது. இவ்வாறு செய்வதே Interprete எனப்படுகிறது.
+
+### Object Oriented  - பொருள் சார் நிரலாக்கம்
+
+நிரல் எழுதும் முறையில் Procedure-oriented programming, object-oriented
+programming என இரண்டு வகைகள் உள்ளன.  _procedure-oriented_ வகை மொழிகளில்,
+நிரலானது சிறு சிறு துண்டுகளாள எழுதி, பிறகு ஒன்றாக கோர்க்கப்
+படுகிறது. அத்துண்டு நிரல்களை procedures அல்லது functions என்போம்.
+_object-oriented_ வகை மொழிகளில், functions உடன் பல்வேறு தகவல்களையும்
+ஒன்றிணைத்து objects பல உருவாக்கி, அவற்றைப் பயன்படுத்தி நிரல் எழுதுவோம்.  பைத்தான்
+மொழியில் இரண்டு முறைகளிலும் நிரல் எழுதலாம்.
+
+ஒன்றும் புரியவில்லை அல்லவா? பரவாயில்லை. விரைவில் இவற்றை கற்றுக்
+கொள்ளலாம். எனக்குமே ஆரம்ப காலங்களில் இவை எதுவும் புரியவில்லை. இப்போது எல்லாம்
+புரிந்து விட்டதா என்று கேட்க மாட்டீர்கள் என்று நம்புகிறேன். ;-)
+
+### Extensible - பிற மொழிகளை இணைத்தல் 
+
+சில காரணங்களுக்காக, வேறு மொழியில் எழுதப்பட்ட நிரல் அல்லது பைனரி கோப்பை,
+பயன்படுத்த நேரிடும். அப்போது அவற்றை நமது பைத்தான் நிரல் மூலம் அப்படியே இயக்கிக்
+கொள்ளலாம்.
+
+### Embeddable - பிற மொழிகளில் இயங்குதல்
+
+C/C\++ போன்ற பிற மொழிகளின் நடுவிலே கூட பைத்தான் நிரலை எழுதிக் கொள்ளலாம்.
+
+
+
+###  எக்கச்சக்கமான துணை நிரல்கள் (Library)
+
+பைத்தான் மொழியின் மாபெரும் பலமே, அதில் கிடைக்கும் பல்லாயிரம் துணை நிரல்களே.
+பைத்தான் மொழியின் கூடவே வருவது The Python Standard Library. இதுவே மிகவும்
+பெரியது. இதிலேயே, பொதுவான நிரல் தேவைகளுக்கான அனைத்து வசதிகளும் உள்ளன.  
+
+
+regular expressions,documentation generation, unit testing, threading,
+databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV
+files, cryptography, GUI (graphical user interfaces) போன்ற பணிகளை
+எளிதில் செய்து முடிக்கலாம்.  இதற்கான துணை நிரல்கள் அனைத்துமே பைத்தான் கூடவே
+நிறுவப்படுகின்றன. இதனால் பைத்தான் மொழியை '_Batteries Included_' என்று அன்போடு
+அழைக்கிறோம்.
+
+இது மட்டுமல்லாமல், பல்லாயிரம் பங்களிப்பாளர்கள் தாம் உருவாக்கும் பல்வேறு துணை
+நிரல்களை, ஒரு இணையக் கிடங்கில் பகிர்ந்து வருகின்றனர். உங்களுக்கு கணினியில் எந்த
+செயலை பைத்தான் மூலம் செய்ய வேண்டும் என்றாலும், அதற்கான துணை நிரல் இங்கு
+கிடைக்கும். காண்க [Python Package Index](http://pypi.python.org/pypi).
+
+
 
 ### Summary
 
-Python is indeed an exciting and powerful language. It has the right combination of performance and features that make writing programs in Python both fun and easy.
+எல்லாவற்றையும் எளிதில் செய்து முடித்துவிடும் அலாவுதீன் அற்புத விளக்காக பைத்தான்
+விளங்குகிறது. இதன் மூலம் எண்ணிய யாவற்றையும் திண்ணமுடன் விரைவில் செய்து
+முடிக்கலாம்.
 
-## Python 3 versus 2
+சிறு குழந்தைகள் Building Blocks எனப்படும் சிறு துண்டுகள் கொண்டு, விரும்பும்
+வகையில் பெரிய பொம்மைகளை செய்வதைக் காணலாம். அதே போலத்தான் பைத்தான் நிரலாக்கமும்
+இருக்கும். தேவையான அனைத்து துணை நிரல்களும் ஏற்கெனேவே நிறுவப்
+பட்டிருக்கும். அல்லது http://pypi.python.org/pypi தளத்தில் கிடைக்கும். அவற்றைக்
+கொண்டு, பெரிய பெரிய மென்பொருட்களை எளிதில் உருவாக்கலாம். என்ன செய்ய வேண்டும் என்ற
+தெளிவும், சற்றே நிரலாக்கப் பழக்கமும் இருந்தால் போதும்.
 
-You can ignore this section if you're not interested in the difference between "Python version 2" and "Python version 3". But please do be aware of which version you are using. This book is written for Python version 3.
 
-Remember that once you have properly understood and learn to use one version, you can easily learn the differences and use the other one. The hard part is learning programming and understanding the basics of Python language itself. That is our goal in this book, and once you have achieved that goal, you can easily use Python 2 or Python 3 depending on your situation.
 
-For details on differences between Python 2 and Python 3, see:
+## ஒன்றா, இரண்டா, மூன்றா ? பைத்தான் பதிப்புகள்
 
-- [The future of Python 2](http://lwn.net/Articles/547191/)
-- [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html)
-- [Writing code that runs under both Python2 and 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
+பிப்ரவரி 20, 1991 அன்று வெளியிடப்பட்ட பைத்தான் மொழி, இன்று வரை தொடர்ந்து, சீரும்
+சிறப்புமாக வளர்ந்து வருகிறது. அதன் சமீபத்திய பதிப்பு 3.9.6
+
+ஆனாலும், பல பழைய கணினிகளில் பைத்தான் 2 தான் கிடைக்கும். இணையத்தில் கிடைக்கும்
+பல்வேறு ஆவணங்கள், பாடங்கள், வலைப்பதிவுகள் போன்றவை பைத்தான் 2 சார்ந்தே இருக்கலாம்.
+
+நாம் இந்த நூலில், பைத்தான் 3 மட்டுமே பயன்படுத்தப் போகிறோம். நீங்களும் பைத்தான் 3 ல்
+இருந்தே தொடங்குங்கள். இதில் பல மேம்பட்ட வசதிகள் உள்ளன. அவற்றை பயன்படுத்தி மகிழ்வோம்.
+
+ஒரு பதிப்பை முறையாகக் கற்றாலே போதும். அதற்கு முந்தைய அல்லது பிற்காலத்தில்
+வரப்போகும் பதிப்புகளை எளிதில் ஒப்பு தோக்கி, நாமே விரைவில் கற்றுக் கொள்ளலாம்.
+
+பைத்தான் 2 க்கும் 3 க்கும் உள்ள வேறுபாடுகளை இங்கே காணலாம்.
+- [The future of Python 2](http://lwn.net/Articles/547191/) [Porting
+- Python 2 Code to Python
+- 3](https://docs.python.org/3/howto/pyporting.html) [Writing code
+- that runs under both Python2 and
+- 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
 - [Supporting Python 3: An in-depth guide](http://python3porting.com)
 
-## What Programmers Say
+## பெருந்தலைகள் என்ன சொல்கிறார்கள்?
 
-You may find it interesting to read what great hackers like Eric S. Raymond (ESR) have to say about Python:
+கணினித் துறையில் பெருந் தலைவரகள் சிலர் பைத்தான் மொழி பற்றி என்ன சொன்னார்கள் என்று
+காண்போம்.
 
-- _Eric S. Raymond_ is the author of "The Cathedral and the Bazaar" and is also the person who coined the term _Open Source_. He says that [Python has become his favorite programming language](http://www.python.org/about/success/esr/). This article was the real inspiration for my first brush with Python.
-- _Bruce Eckel_ is the author of the famous 'Thinking in Java' and 'Thinking in C++' books. He says that no language has made him more productive than Python. He says that Python is perhaps the only language that focuses on making things easier for the programmer. Read the [complete interview](http://www.artima.com/intv/aboutme.html) for more details.
-- _Peter Norvig_ is a well-known Lisp author and Director of Search Quality at Google (thanks to Guido van Rossum for pointing that out). He says that [writing Python is like writing in pseudocode](https://news.ycombinator.com/item?id=1803815). He says that Python has always been an integral part of Google. You can actually verify this statement by looking at the [Google Jobs](http://www.google.com/jobs/index.html) page which lists Python knowledge as a requirement for software engineers.
+
+- _Eric S. Raymond_ (எரிக் ரேமண்ட்) ரேமண்ட் துணிக்கடை முதலாளி அல்ல.  "The
+  Cathedral and the Bazaar" என்ற புகழ்பெற்ற நூலின் ஆசிரியர்.  _Open Source_
+  என்ற சொற்றொடரை உருவாக்கியவர்.  [பைத்தான் தனக்கு மிகவும் பிடித்த
+  மொழி](http://www.python.org/about/success/esr/). என்கிறார். அவரது இந்தக்
+  கட்டுரையே, நானும் என்னைப் போன்ற பலரும் பைத்தான் பற்றி அறிந்து, கற்க ஆர்வம்
+  ஊட்டியது.
+
+- _Bruce Eckel_ இவர் புகழ்பெற்ற 'Thinking in Java' , 'Thinking in C++'
+  நூல்களின் ஆசிரியர். 'யாமறிந்த மொழிகளிலே, பைத்தான் போல் திறன் மிக்கது, வேறு
+  எதுவும் இல்லை. பைத்தான் தான், நிரலர் வாழ்க்கையை எளிதாக்குகிறது' என்கிறார் இந்த
+  நவயுக கணினி பாரதி. ஆம். இது வசிஷ்டர் வாயால் பிரம்ம ரிஷி பட்டம் பெறுவதற்கு
+  ஒப்பானது. [முழு பேட்டி இங்கே](http://www.artima.com/intv/aboutme.html)
+
+
+- _Peter Norvig_ இவர் ஒரு புகழ் பெற்ற Lisp மொழி ஆய்வாளர். கூகுள் தேடுபொறியின்
+  தரம் சார்ந்த துறையின் இயக்குனர்.  [பைத்தான் நிரல் எழுதுவுது என்பது, மனதில் உள்ள
+  திட்டத்தை, அப்படியே எழுதிவிடுதல் போன்றதே. தனியே நிரல் எழுத, அதிகம் மெனக்கெட
+  வேண்டியதில்லை.](https://news.ycombinator.com/item?id=1803815). கூகுள்
+  நிறுவனத்தில் பைத்தான் பெரும் பங்கு வகிக்கிறது என்கிறார். மேலும் இது பற்றி [கூகுள்
+  பணிகள்](http://www.google.com/jobs/index.html) இணைப்பில் பைத்தான்
+  வல்லுனர்களுக்கு உள்ள வேலைகளைக் காணலாம்.
+

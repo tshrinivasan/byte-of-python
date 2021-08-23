@@ -1,6 +1,6 @@
-# Basics
+# சில அடிப்படைகள்
 
-Just printing `hello world` is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
+ `hello world` என்று அச்சிடுவது மட்டும் போதாது. அதற்கும் மேலே ஏதாவது செய்தால் நன்றாக இருக்குமே. you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
 
 ## Comments
 

@@ -1,18 +1,25 @@
-# Preface
+# முன்னுரை
 
-Python is probably one of the few programming languages which is both simple and powerful. This is good for beginners as well as for experts, and more importantly, is fun to program with. This book aims to help you learn this wonderful language and show how to get things done quickly and painlessly - in effect 'The Anti-venom to your programming problems'.
+பைத்தான், மிகவும் எளிய, ஆனால் திறம் மிக்க கணினி நிரலாக்க மொழி. (நிரலாக்கம் = Programming)  மாணவர்கள் முதல் வல்லுனர்கள் வரை பலரும் பயன்படுத்தி வரும் மொழி. இதில் நிரல் எழுதுவது இனிதாகவும், மகிழ்ச்சியாகவும் இருக்கும். ஆம். நமது நினைப்பதை எளிதில் நிரலாக மாற்றி, இயக்கி விட முடிந்தால் பெருமகிழ்ச்சி தானே. இந்த சிறு நூலில் பைத்தான் அறிமுகம் பெற்று, நாம் விரும்பும் நிரல்களை எளிதில்வ, விரைவில் எழுதக் கற்கலாம்.
 
-## Who This Book Is For
 
-This book serves as a guide or tutorial to the Python programming language. It is mainly targeted at newbies. It is useful for experienced programmers as well.
+## யாருக்காக, இது யாருக்காக? 
 
-The aim is that if all you know about computers is how to save text files, then you can learn Python from this book. If you have previous programming experience, then you can also learn Python from this book.
+இது உண்மையிலேயே ஒரு சிறு நூல்தான். பைத்தான் மொழி அறிமுகம் மட்டுமே இதில் கிடைக்கும். மாணவர்கள், நிரலாக்கத்துக்குப் புதியவர்கள் ஆகியோருக்காகவே இந்த நூல் எழுதப்பட்டுள்ளது. வல்லுனர்களும் படிக்கலாம். 
 
-If you do have previous programming experience, you will be interested in the differences between Python and your favorite programming language - I have highlighted many such differences. A little warning though, Python is soon going to become your favorite programming language!
+உங்களுக்கு, கணினி இயக்கத் தெரியும். அதில் கோப்புகளை எழுதி, சேமிக்கத் தெரியும். அதே கோப்புகளை மீண்டும் திறக்கத் தெரியும் எனில், சபாஷ். பிடியுங்கள் ஒரு பரிசு. நீங்கள் இனி எளிதில் பைத்தான் மொழி கற்கலாம். 
+'என்ன? நிஜமாகவா?' 
+'அட. ஆமாங்க. நீங்களும் பைத்தான் கற்கலாம்.' 
+'இது போதும் எனக்கு. இது போதுமே. வேறென்ன வேண்டும் இது போதுமே!' 
 
-## Official Website
+உங்களுக்கு ஏற்கெனவே ஏதேனும் ஒரு நிரலாக்கம மொழி தெரியும் எனில் இன்னும் எளிது. பிற மொழிகளுக்கும் பைத்தான் மொழிக்கும் உள்ள சில வித்தியாசங்களை ஆங்காங்கே சொல்லி இருப்பேன். உங்களுக்கு வேறு ஒரு நிரலாக்க மொழி, மிகவும் பிடிக்கும் எனில், அதற்கு விடை கொடுக்கும் நேரம் வந்து விட்டது. விரைவில் பைத்தான் எனும் காதல் பிசாசு உங்கள் மனதில் மேல் நிரந்தரமாக குடி கொள்ளப் போகிறது. 
 
-The official website of the book is {{ book.officialUrl }} where you can read the whole book online, download the latest versions of the book, [buy a printed hard copy]({{ book.buyBookUrl }}) and also send me feedback.
+
+
+## இந்த மின்னூலின் இணைய தளம்
+
+"A Byte of Python" என்ற ஆங்கில நூலைத் தழுவி எழுதியதே இந்த மின்னூல். ஆங்கில மூல நூலின் இணைய தளம் இது. {{ book.officialUrl }} இங்கே நீங்கள் ஆங்கில நூலின் மேம்பட்ட பதிப்புகளை இணைய வழியில் படிக்கலாம். பதிவிறக்கம் செய்யலாம். பிற மொழிகளிலும் படிக்கலாம். [அச்சு நூலாகவும் வாங்கலாம்]({{ book.buyBookUrl }})
+
 
 ## Something To Think About
 

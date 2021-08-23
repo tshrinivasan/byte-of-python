@@ -1,78 +1,87 @@
-# Installation {#installation}
+# நிறுவுதல் {#நிறுவுதல்}
 
-When we refer to "Python 3" in this book, we will be referring to any version of Python equal to or greater than version [Python {{ book.pythonVersion }}](https://www.python.org/downloads/).
+இந்த நூலில் 'பைத்தான் 3' என்று கூறும் இடங்களில் எல்லாம் 'பைத்தான் 3 அல்லது அதற்கு மேம்பட்ட பதிப்புகள் என்று கருத்தில் கொள்ள வேண்டுகிறேன். 
+[Python {{ book.pythonVersion }}](https://www.python.org/downloads/).
 
-## Installation on Windows
+## விண்டோசு கணினியில் நிறுவுதல்
 
-Visit https://www.python.org/downloads/ and download the latest version. At the time of this writing, it was Python 3.5.1 
-The installation is just like any other Windows-based software.
+இந்த இணைப்புக்கு செல்க.  https://www.python.org/downloads/ 
+பைத்தான் புதிய பதிப்பைக் கண்டு, அதை பதிவிறக்கம் செய்க.
+இந்த நூலை எழுதும் போது பைதான் 3.5.1 என்ற பதிப்பு கிடைத்தது. உங்களுக்கு இதை விட மேம்பட்ட பதிப்பு கிடைக்கும்.
+நிறுவுதல் என்பது, பிற மென்பொருட்களை விண்டோசு கணினியில் நிறுவுதல் போன்றதே. ஆம். அதே 'Next, Next, Agree...' தான்.
 
-Note that if your Windows version is pre-Vista, you should [download Python 3.4 only](https://www.python.org/downloads/windows/) as later versions require newer versions of Windows.
+உங்கள் கணினி விண்டோசு விஸ்டா க்கு முந்தையது எனில் பைத்தான் 3.4 ஐ தெரிவு செய்க.[download Python 3.4 only](https://www.python.org/downloads/windows/) புது பைத்தானுக்கு, புது விண்டோசுதான் தேவையாம். என்னவோ போடா மாதவா!
 
-CAUTION: Make sure you check option `Add Python 3.5 to PATH`.
+*எச்சரிக்கை* - நிறுவும் போது  `Add Python 3.5 to PATH` என்று ஒரு பெட்டி இருக்கும். சின்னதாகத்தான் இருக்கும். அதை மறக்காமல் கிளிக் செய்து விடுக். பெட்டியில் டிக் போட்டாச்சா என்று ஒன்றுக்கு பலமுறை சோதிக்கவும். இதை மறந்தால் எல்லாம் போச்சு. 
 
-To change install location, click on `Customize installation`, then `Next` and enter `C:\python35` (or another appropriate location) as the install location.
+பைத்தான் நிறுவப்படும் இடத்தை மாற்ற,  `Customize installation`, தெரிவு செய்க. பிறகு `Next` பிறகு  `C:\python35` அல்லது உங்களுக்கு உகந்த ஒரு Folder இடத்தை உள்ளிடுக. 
 
-If you didn�t check the `Add Python 3.5 PATH` option earlier, check `Add Python to environment variables`. This does the same thing as `Add Python 3.5 to PATH` on the first install screen.
+ `Add Python 3.5 PATH`  இதை முன்பே தெரிவு செய்யவில்லை என்றால், இப்போது செய்யலாம். இந்த  `Add Python to environment variables` பெட்டிக்கு ஒரு டிக் போட்டு விடுங்கள்.  முன்னர் காட்டிய அதே  `Add Python 3.5 to PATH` தான் இதுவும். 
 
-You can choose to install Launcher for all users or not, it does not matter much. Launcher is used to switch between different versions of Python installed.
 
-If your path was not set correctly (by checking the `Add Python 3.5 Path` or `Add Python to environment variables` options), then follow the steps in the next section (`DOS Prompt`) to fix it. Otherwise, go to the `Running Python prompt on Windows` section in this document.
+`install Launcher` என்பதையும் தெரிவு செய்க. இது ஒரே கணினியில் பல பைத்தான் பதிப்புகள் நிறுவப்பட்டிருந்தால், தேவையானதை Start Menu மூலம் தேர்ந்தெடுக்க உதவுகிறது. 
 
-NOTE: For people who already know programming, if you are familiar with Docker, check out [Python in Docker](https://hub.docker.com/_/python/) and [Docker on Windows](https://docs.docker.com/windows/).
+ஒருவேளை, `Add Python 3.5 Path` அல்லது `Add Python to environment variables` தெரிவு செய்யப்படவில்லை என்றால், பைத்தான் இயக்க முடியாது.     "‘python’ is not recognized as an internal or external command" என்ற பிழைச்செய்தி கிடைக்கும். அப்போது,  (`DOS Prompt`) என்ற பகுதியில் உள்ளபடி செய்யுங்கள்.  `Running Python prompt on Windows` பகுதியிலும் காண்க.
+
+Docker பற்றிய அறிமுகம் உள்ளவர்கள் இங்கே பாருங்கள், [Python in Docker](https://hub.docker.com/_/python/) இதுவும் [Docker on Windows](https://docs.docker.com/windows/).
 
 ### DOS Prompt {#dos-prompt}
 
-If you want to be able to use Python from the Windows command line i.e. the DOS prompt, then you need to set the PATH variable appropriately.
+மேலதிக விவரங்களுக்கு
+https://www.pythoncentral.io/add-python-to-path-python-is-not-recognized-as-an-internal-or-external-command/
 
-For Windows 2000, XP, 2003 , click on `Control Panel` -> `System` -> `Advanced` -> `Environment Variables`. Click on the variable named `PATH` in the _System Variables_ section, then select `Edit` and add `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate directory name.
+விண்டோசு கணினியில், DOS prompt எனப்படும்  command line ல் பைத்தான் செயல்பட வேண்டுமெனில், PATH variable என்பதை சரி செய்ய வேண்டும்.
+
+
+ Windows 2000, XP, 2003 கணினிகளில் ,  `Control Panel` -> `System` -> `Advanced` -> `Environment Variables` பகுதிக்கு செல்க.   _System Variables_ பகுதியில் உள்ள,  `PATH` ஐ தெரிவு செய்க. பிறகு `Edit` தெரிவு செய்க.  `;C:\Python35`  என்பதை அங்கே எழுதுங்கள். ஏற்கெனவே சில தகவ்வல்கள் அங்கே இருக்கும். அவற்றுக்குப் பின்னர் இதை சேருங்கள். இருப்பதை நீக்கி விடாதீர்கள். அவையும் மிக முக்கியம்.  (அந்த கோப்புறை, அதாங்க folder, ஏற்கெனவே இருக்கிறதா என்று பாருங்கள். அல்லது நீங்கள் எங்கே பைத்தான் நிறுவினீர்களோ, அந்த கோப்புறையின் முழு இடப்பெயர் தருக. உங்களிடம் வேறு பைத்தான் பதிப்பு இருந்தால், இந்தப் இடமும் மாறுபடும். அதைக் கண்டுபிடித்து, சரியான இடத்தை இங்கே நிரப்புக) 
 
 <!-- The directory should match pythonVersion variable in book.json -->
-For older versions of Windows, open the file `C:\AUTOEXEC.BAT` and add the line `PATH=%PATH%;C:\Python35` and restart the system. For Windows NT, use the `AUTOEXEC.NT` file.
+பழைய விண்டோசு பதிப்புகளில்,  `C:\AUTOEXEC.BAT` என்ற கோப்பு (file) திறக்கவும். அதில்  `PATH=%PATH%;C:\Python35`  என்ற வரியை சேருங்கள். பின் கணினியை அணைத்து மீண்டும் எழுப்புங்கள். கட்டி அணைக்க வேண்டாம். restart செய்யுங்கள். Windows NT கணினியில் இதையே,  `AUTOEXEC.NT` கோப்பில் எழுதி, அணைத்து, எழுப்புங்கள்.
 
-For Windows Vista:
+Windows Vista கணினியில்;
 
-- Click Start and choose `Control Panel`
-- Click System, on the right you'll see "View basic information about your computer"
-- On the left is a list of tasks, the last of which is `Advanced system settings`. Click that.
-- The `Advanced` tab of the `System Properties` dialog box is shown. Click the `Environment Variables` button on the bottom right.
-- In the lower box titled `System Variables` scroll down to Path and click the `Edit` button.
-- Change your path as need be.
-- Restart your system. Vista didn't pick up the system path environment variable change until I restarted.
+- Start -> `Control Panel`
+- System என்பதை தெரிவு செய்க. வலது புறத்தில்,  "View basic information about your computer" என்பதைக் காணலாம்.
+- இடது புறத்தில்  `Advanced system settings` ஐத் தொடுங்கள்.
+  `System Properties` -> `Advanced` பெட்டியில் `Environment Variables` என்று அடியில் வலதுபுறம் இருக்கும். 
+- `System Variables` என்ற பெட்டியில் 'Path' என்பதைக் கண்டுபிடித்து `Edit` பட்டனை அழுத்துக.
+- தேவையான folder ன் முழுப்பெயரை சேருங்கள். 
+- கணினியை அணைத்து மீண்டும் எழுப்புங்கள்.
 
-For Windows 7 and 8:
+விண்டோசு 7 ,  8:
 
-- Right click on Computer from your desktop and select `Properties` or click `Start` and choose `Control Panel` -> `System and Security` -> `System`. Click on `Advanced system settings` on the left and then click on the `Advanced` tab. At the bottom click on `Environment Variables` and under `System variables`, look for the `PATH` variable, select and then press `Edit`.
-- Go to the end of the line under Variable value and append `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate folder name.
-- If the value was `%SystemRoot%\system32;` It will now become `%SystemRoot%\system32;C:\Python36` <!-- The directory should match pythonVersion variable in book.json -->
-- Click `OK` and you are done. No restart is required, however you may have to close and reopen the command line.
+- டெஸ்க்டாப்பில் உள்ள  Computer ஐ வலது கிளிக் செய்து,  `Properties` தெரிவு செய்க. அல்லது `Start` -> `Control Panel` -> `System and Security` -> `System` -> `Advanced system settings` -> `Advanced`. இதில் `System variables`க்கு கீழே  `Environment Variables` தெரிவு செய்க. `PATH` -> `Edit`.
+- இதில் கடைசிக்கு சென்று`;C:\Python35`  அல்லது தேவையான கோப்புறை பெயர் தருக. 
+- ஏற்கெனவே இருந்தது `%SystemRoot%\system32;` எனில் இப்போது `%SystemRoot%\system32;C:\Python35` என்று இருக்க வேண்டும். <!-- The directory should match pythonVersion variable in book.json -->
+-  `OK` கிளிக் செய்க. கணினியை மீள்துவக்கம் செய்க. 
 
-For Windows 10:
+விண்டோசு  10:
 
-Windows Start Menu > `Settings` > `About` > `System Info` (this is all the way over to the right) > `Advanced System Settings` > `Environment Variables` (this is towards the bottom) > (then highlight `Path` variable and click `Edit`) > `New` > (type in whatever your python location is.  For example, `C:\Python35\`)
+Start Menu > `Settings` > `About` > `System Info`  > `Advanced System Settings` > `Environment Variables` -> `Path` -> `Edit` > `New` > (இங்கே தேவையான கோப்புறை பெயர் எழுதுக. உதாரணம். `C:\Python35\`)
+
+உஷ்...... இனிமேல் விண்டோசுதான் மிக எளிது, User Friendly, பிளா, பிளா.... என்று யாரும் என்னிடம் சொல்லிக் கொண்டு வராதீர்கள். 
 
 
-### Running Python prompt on Windows
+### விண்டோசில் பைத்தானை இயக்குதல்
 
-For Windows users, you can run the interpreter in the command line if you have [set the `PATH` variable appropriately](#dos-prompt).
+விண்டோசில் டெர்மினல் அல்லது cmd / command prompt மூலம் பைத்தானை இயக்கலாம். அதற்கு `start button`-> `Run` செல்க. அதில் `cmd` என்று எழுதி `[enter]` தருக.
 
-To open the terminal in Windows, click the start button and click `Run`. In the dialog box, type `cmd` and press `[enter]` key.
+இப்போது தெரியும் ஒரு கருப்புப் பெட்டியில்,  `python` என்று எழுதி  `[enter]` தருக. பிழைச்செய்தி ஏதும் இருக்கிறதா என்று பார்க்கவும்.
 
-Then, type `python` and ensure there are no errors.
+## மேக் கணினியில் பைத்தான் நிறுவுதல்
 
-## Installation on Mac OS X
+Mac OS X பயனர்கள், [Homebrew](http://brew.sh): `brew install python3`  என்ற கட்டளை மூலம் பைத்தான் நிறுவலாம். `Terminal` என்று எழுதி `[enter]` அழுத்துக. கருப்புத் திரை திறக்கும். இதுதான் பைத்தான் இயங்கும் மாயத்திரை. இங்கு `python3` என்று எழுதி `[enter]` அழுத்துக. பிழை ஏதும் உள்ளதா என்று காண்க.
 
-For Mac OS X users, use [Homebrew](http://brew.sh): `brew install python3`.
+## குனு/லினக்சு கணினிகளில் பைத்தான் நிறுவுதல்
 
-To verify, open the terminal by pressing `[Command + Space]` keys (to open Spotlight search), type `Terminal` and press `[enter]` key. Now, run `python3` and ensure there are no errors.
+நீங்கள் எதுவுமே செய்ய வேண்டாம். ஏற்கெனவே உங்கள் குனு/லினக்சு கணினியில் பைத்தான் நிறுவப்பட்டிருக்கும். பைத்தான் இல்லாமல் குனு/லினக்சு கிடையாது. 
 
-## Installation on GNU/Linux
+இருந்தாலும், உபுண்டு, டெபியன் கணினிகளில் பைத்தான் 3 நிறுவ, உங்கள் டெர்மினல் மாயத்திரையில், பின்வரும் கட்டளைகளைத் தருக. `sudo apt-get update && sudo apt-get install python3`.
 
-For GNU/Linux users, use your distribution's package manager to install Python 3, e.g. on Debian & Ubuntu: `sudo apt-get update && sudo apt-get install python3`.
+பின் அதில் `python3` என்று எழுதி `[enter]` அழுத்துக. பிழை ஏதும் உள்ளதா என்று காண்க.
 
-To verify, open the terminal by opening the `Terminal` application or by pressing `Alt + F2` and entering `gnome-terminal`. If that doesn't work, please refer the documentation of your particular GNU/Linux distribution. Now, run `python3` and ensure there are no errors.
+நிறுவப்பட்டுள்ள பைத்தான் பதிப்பை, பின்வரும் கட்டளை மூலம் அறியலாம்.
 
-You can see the version of Python on the screen by running:
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```
@@ -80,12 +89,19 @@ $ python3 -V
 Python 3.6.0
 ```
 
-NOTE: `$` is the prompt of the shell. It will be different for you depending on the settings of the operating system on your computer, hence I will indicate the prompt by just the `$` symbol.
+குறிப்பு: இங்கே `$` என்பது கட்டளைகளை இயக்க காத்திருக்கும் ஷெல் குறியீடு ஆகும். உங்களுக்கு வேறு மாதிரி கூட இருக்கலாம். 
 
-CAUTION: Output may be different on your computer, depending on the version of Python software installed on your computer.
+# மாயத்திரை
 
-## Summary
+Terminal, shell, command prompt, cmd, powershell, console, gnome-teminal, konsole என்று கடவுள் போல பல பெயர்களில் அழைக்கப்படும் கருப்புத் திரையே, இனி நமக்கு வீடு. இதில் தான், எல்லா பைத்தான் நிரல்களையும் இயக்கப் போகிறோம். இதுவரை உங்களுக்கு இந்தக் கருப்புத்திரை மீது ஏதேனும் பயம் உண்டு எனில், அதில் இருந்து வெளியே வர ஆவன செய்யுங்கள். நீச்சல் பழக, ஆற்றில் குதிப்பது போல, (ஆறு எங்கே இருக்கிறது. குளம்தான் நமக்கு ஆறு) நீங்களும் பைத்தான் கற்க, பைத்தான் மட்டுமல்ல, கணினியை திறம்பட இயக்க, இந்த டெர்மினலை கற்றுக் கொள்ள வேண்டும். உங்கள் பணிகள் அனைத்தையும் இதிலேயே செய்யுங்கள்.
 
-From now on, we will assume that you have Python installed on your system.
+சில நாட்களில், இந்த மாயத்திரை, ஒரு அலாவுதீன் பூதமாக, நினைப்பதை எல்லாம் விரைவில் செய்து முடித்து,  உங்கள் வாழ்க்கையை மாற்றிவிடுவதை உணர்வீர்கள்.
 
-Next, we will write our first Python program.
+
+## என்ன பார்த்தோம்?
+
+உங்கள் கணினியில் பைத்தான் நிறுவுவது எப்படி என்று பார்த்தோம். இன்னும் அதில் ஏதேனும் சிக்கல் எனில், இணையத்தில் தேடுங்கள். பல முறை பலரும் பதில் எழுதியிருப்பர். அவற்றை பொறுமையாகப் படித்து, சிக்கல்களைத் தீர்த்து விடுங்கள். எப்படியாவது பைத்தான் 3 ஐ நிறுவிவிட வேண்டும். அவ்வளவுதான்.
+
+அடுத்து, நமது முதல் பைத்தான் நிரலை எழுதலாம். 
+
+தம்பீ வா! பைத்தான் நிரல் எழுத வா!
